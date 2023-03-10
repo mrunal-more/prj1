@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage age prediction</title>
+</head>
+<body style="background-color: #95b6e4;">
+    <h1> Marriage age prediction</h1>
+
+
+    <form action="/get_data" method="post">
+        <label>Gender:</label> 
+         <input type="radio" name = 'html_gender' value="male"> <label>Male</label>
+         <input type="radio" name = 'html_gender' value="female"> <label>Female</label> <br><br>
+
+        <label>religion:</label> <input type="number" name = 'html_religion'> <br><br>
+
+        <label>caste:</label> <input type="text" name = 'html_caste'> <br><br>
+
+        <label>mother_tongue:</label> <input type="number" name = 'html_mother_tongue'> <br><br>
+
+        <label>country:</label> <input type="number" name = 'html_country'> <br><br>
+
+        <label>height_cm:</label> <input type="number" name = 'html_height_cms'> <br><br>
+        </select> <br><br>
+
+        <input type="submit" value="AGE PREDICTION">
+
+
+    </form><br>
+    <label>Predicted AGE For Marriage : </label>{{prediction}}
+
+</body>
+</html>
