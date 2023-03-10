@@ -3,11 +3,11 @@ import numpy as np
 import json
 import pickle
 
-with open('artifacts\project_data.json','r') as file:
+with open('artifacts/project_data.json','r') as file:
     project_data = json.load(file)
 
 
-with open('artifacts\model.pkl','rb') as file:
+with open('artifacts/model.pkl','rb') as file:
     model = pickle.load(file)
 
 
