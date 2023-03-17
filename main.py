@@ -30,11 +30,11 @@ def get_data():
            
     user_data = np.zeros(len(project_data['column_names']))
     user_data[0] = project_data['gender'][gender]
-    user_data[1] = religion
-    user_data[2] = caste
-    user_data[3] = mother_tongue
-    user_data[4] = country
-    user_data[5] = height_cms
+    user_data[1] = religion['religion'][religion]
+    user_data[2] = caste['caste'][caste]
+    user_data[3] = mother_tongue['mother_tongue'][mother_tongue]
+    user_data[4] = country['country'][country]
+    user_data[5] = height_cms['height_cms'][height_cms]
 
     result = model.predict([user_data])[0]
     print(result)
